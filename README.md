@@ -1,3 +1,3 @@
 ![](https://github.com/oryanmoshe/simple-aws-creds-provider/workflows/Run%20Tests/badge.svg?branch=master) ![](https://github.com/oryanmoshe/simple-aws-creds-provider/workflows/GitHub%20Release/badge.svg) ![](https://github.com/oryanmoshe/simple-aws-creds-provider/workflows/GitHub%20Package/badge.svg)
-# Kafka Connect S3 Sink - SimpleAWSCredsProvider
+# Kafka Connect S3 Sink - SimpleAWSCredentialsProvider
 This is a custom credentials provider for the S3 sink, that allows you to provide credentials within the configuration (like all other cloud storage sinks)
