@@ -3,7 +3,7 @@
   <groupId>oryanmoshe.kafka.connect.util</groupId>
   <artifactId>SimpleAWSCredentialsProvider</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.1.0-SNAPSHOT</version>
   <name>SimpleAWSCredentialsProvider</name>
   <url>http://maven.apache.org</url>
   <properties>
@@ -60,12 +60,24 @@
       </plugin>
     </plugins>
   </build>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk-bom</artifactId>
+        <version>1.11.756</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <dependencies>
     <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk -->
     <dependency>
       <groupId>com.amazonaws</groupId>
-      <artifactId>aws-java-sdk</artifactId>
-      <version>1.11.756</version>
+      <artifactId>aws-java-sdk-core</artifactId>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
