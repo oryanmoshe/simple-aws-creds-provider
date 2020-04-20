@@ -8,7 +8,7 @@ import org.apache.kafka.common.config.ConfigException;
 
 import java.util.Map;
 
-public class PlainAWSCredentialsProvider implements AWSCredentialsProvider, Configurable {
+public class SimpleAWSCredentialsProvider implements AWSCredentialsProvider, Configurable {
 
     public static final String ACCESS_KEY_NAME = "access.key";
     public static final String SECRET_KEY_NAME = "secret.key";
