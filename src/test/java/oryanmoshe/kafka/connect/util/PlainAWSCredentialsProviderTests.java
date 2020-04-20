@@ -7,11 +7,11 @@ import java.util.HashMap;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import com.amazonaws.auth.AWSCredentials;
 
-public class SimpleAWSCredentialsProviderTests {
+public class PlainAWSCredentialsProviderTests {
     @ParameterizedTest
     @CsvSource({ "AKIAJWONYEXAMPLEIRAA, 8wpEXAMPLE3p18VjOUUw2Fz9FH" })
     void createCreds(final String accessKey, final String secretKey) {
-        final SimpleAWSCredentialsProvider credsProvider = new SimpleAWSCredentialsProvider();
+        final PlainAWSCredentialsProvider credsProvider = new PlainAWSCredentialsProvider();
         final Map<String, String> config = new HashMap<String, String>() {
             {
                 put("access.key", accessKey);
